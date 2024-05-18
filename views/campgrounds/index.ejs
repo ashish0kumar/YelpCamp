@@ -1,24 +1,25 @@
 <% layout("layouts/boilerplate") %>
 
-<h1>All Campgrounds</h1>
-
-<div>
-    <a href="/campgrounds/new">Add Campground</a>
+<div class="d-flex justify-content-between align-items-center">
+    <h1 class="fw-semibold fs-2"><i class="fa-solid fa-list"></i> All Campgrounds</h1>
+    <a class="btn btn-success" href="/campgrounds/new"><i class="fa-solid fa-plus"></i> Add Campground</a>
 </div>
+
+<hr>
 
 <% for (let campground of campgrounds) { %>
 
-    <div class="card mb-3">
+    <div class="card mb-2 mt-5 rounded shadow">
         <div class="row">
             <div class="col-md-4">
-                <img src="<%= campground.image %>" class="img-fluid">
+                <img src="<%= campground.image %>" class="img-fluid rounded">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title"><%= campground.title %></h5>
+                    <h5 class="card-title fw-semibold"><%= campground.title %></h5>
                     <p class="card-text"><%= campground.description %></p>
-                    <p><small class="text-muted"><%= campground.location %></small></p>
-                    <a class="btn btn-primary" href="/campgrounds/<%= campground._id %>">View <%= campground.title %></a>
+                    <p><small class="text-muted"><i class="fa-solid fa-location-dot"></i> <%= campground.location %></small></p>
+                    <a class="btn btn-primary" href="/campgrounds/<%= campground._id %>">View more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>

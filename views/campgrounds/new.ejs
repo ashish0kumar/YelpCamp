@@ -1,20 +1,21 @@
 <% layout("layouts/boilerplate") %>
 
-<div class="row">
-    <h1 class="text-center">New Campground</h1>
-    <div class="col-6 offset-3">        
+<div class="container small-container mb-5 px-5 py-4 rounded bg-white shadow">
+    <h1 class="text-center fs-3 fw-semibold mb-3">New Campground</h1>
+    <hr>
+    <div>
         <form action="/campgrounds" method="POST">
-        
+    
             <div class="mb-3">
                 <label class="form-label" for="title">Title</label>
                 <input class="form-control" type="text" name="campground[title]" id="title">
             </div>
-        
+    
             <div class="mb-3">
                 <label class="form-label" for="location">Location</label>
                 <input class="form-control" type="text" name="campground[location]" id="location">
             </div>
-
+    
             <div class="mb-3">
                 <label class="form-label" for="price">Price</label>
                 <div class="input-group">
@@ -22,20 +23,20 @@
                     <input type="text" class="form-control" name="campground[price]" id="price" placeholder="0.00">
                 </div>
             </div>
-
+    
             <div class="mb-3">
                 <label class="form-label" for="image">Image URL</label>
                 <input class="form-control" type="text" name="campground[image]" id="image">
             </div>
-
-            <div class="mb-3">
+    
+            <div class="mb-4">
                 <label class="form-label" for="description">Description</label>
                 <textarea class="form-control" name="campground[description]" id="description"></textarea>
             </div>
-
+    
             <button class="btn btn-success me-2">Add Campground</button>
             <a class="btn btn-secondary" href="/campgrounds">Back to Campgrounds</a>
-        
+    
         </form>
     </div>
 </div>
