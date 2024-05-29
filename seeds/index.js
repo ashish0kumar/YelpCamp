@@ -21,6 +21,7 @@ const seedDB = async () => {
         const res = await axios.get("https://api.unsplash.com/photos/random?client_id=tVnezep4QeEafTgUrQM2QVhBZiVpWIKwc_K0xChaj1k&collections=483251&count=1&orientation=landscape");
         const imgURL = res.data[0].urls.raw;
         const camp = new Campground({
+            author: '6656f72c841078ded5dabd6c',
             location: `${sample(cities).city}, ${sample(cities).state}`,
             title: `${sample(descriptors)} ${sample(places)}`,
             image: imgURL,
