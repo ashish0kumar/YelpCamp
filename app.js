@@ -82,7 +82,6 @@ app.all("*", (req, res, next) => {
 });
 
 
-
 //* Error handler
 
 app.use((err, req, res, next) => {
