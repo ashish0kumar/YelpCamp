@@ -16,7 +16,6 @@ const ExpressError = require("./utils/ExpressError");
 const userRoutes = require("./routes/users");
 const campgroundRoutes = require("./routes/campgrounds");
 const reviewRoutes = require("./routes/reviews");
-const { date } = require("joi");
 
 
 mongoose.connect("mongodb://localhost:27017/yelp-camp");
