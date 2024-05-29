@@ -49,6 +49,7 @@
         </div>
         <% } %>
         
+        <% if (campground.reviews.length !== 0) { %>
         <div class="card mb-3 p-4 rounded shadow">
             <h2 class="fw-semibold fs-4">Reviews</h2>
             <% for (let review of campground.reviews) { %>
@@ -63,5 +64,6 @@
             </div>
             <% } %>
         </div>
+        <% } %>
     </div>
 </div>
