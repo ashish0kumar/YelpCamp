@@ -1,22 +1,29 @@
 <% layout("layouts/boilerplate") %>
 
-    <h1>Login</h1>
+<div class="container smaller-container mb-5 px-5 py-4 rounded bg-white shadow">
 
+    <h1 class="text-center fs-2 fw-semibold mb-3">Login</h1>
+    <hr>
+    
     <form action="/login" method="POST" class="validated-form" novalidate>
-        <div class="mb-3">
+        <div class="mb-3 mt-4">
             <label class="form-label" for="username">Username</label>
             <input class="form-control" type="text" name="username" id="username" required>
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Please choose a username</div>
         </div>
-
-        <div class="mb-3">
+    
+        <div class="my-4">
             <label class="form-label" for="password">Password</label>
             <input class="form-control" type="password" name="password" id="password" required>
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Please choose a password</div>
         </div>
-
-        <button class="btn btn-success">Login</button>
-
+    
+        <button class="btn btn-success mt-3 mb-4 w-100">Login</button>
+    
     </form>
+
+    <p class="text-center">Don't have an account? <a class="text-decoration-none" href="/register">Signup</a></p>
+
+</div>
