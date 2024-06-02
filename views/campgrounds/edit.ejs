@@ -1,5 +1,25 @@
 <% layout("layouts/boilerplate") %>
 
+<style>
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .image-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .checkbox-top-left {
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        z-index: 1;
+    }
+</style>
+
 <div class="container small-container mb-5 px-5 py-4 rounded bg-white shadow">
     <h1 class="text-center fs-3 fw-semibold mb-3">Edit Campground</h1>
     <hr>
@@ -40,23 +60,28 @@
                 <div class="invalid-feedback">Please choose a description</div>
             </div>
 
-            <div class="mb-3">
+            <div class="mb-4">
                 <label for="formFileMultiple" class="form-label">Add more images</label>
                 <input class="form-control" type="file" name="image" id="image" multiple>
             </div>
 
-            <div class="mb-3">
+            <div class="mb-4">
+                <label class="form-label mb-3">Delete selected images</label><br>
                 <% campground.images.forEach(function(img, i) { %>
-                    <img src="<%= img.url %>" class="img-thumbnail" alt="">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="image-<%= i %>" name="deleteImages[]" value="<%= img.filename %>">
-                        <label class="form-check-label" for="image-<%= i %>">Delete</label>
+                    <div class="image-container mx-2 mb-2">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input checkbox-top-left" id="image-<%= i %>" name="deleteImages[]"
+                                value="<%= img.filename %>">
+                            <label for="image-<%= i %>">
+                                <img src="<%= img.thumbnail %>" class="img-thumbnail" alt="">
+                            </label>
+                        </div>
                     </div>
                 <% }) %>
             </div>
     
-            <button class="btn btn-primary me-2 mb-2 text-white">Update Campground</button>
-            <a class="btn btn-secondary mb-2" href="/campgrounds/<%= campground._id %>">Back to Campground</a>
+            <button class="btn btn-primary mb-2 text-white w-100">Update Campground</button><br>
+            <a class="btn btn-secondary mb-2 w-100" href="/campgrounds/<%= campground._id %>">Back to Campground</a>
     
         </form>
     </div>
