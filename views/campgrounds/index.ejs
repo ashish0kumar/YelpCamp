@@ -1,5 +1,7 @@
 <% layout("layouts/boilerplate") %>
 
+<div id="map" style="width: 100%; height: 400px;"></div>
+
 <div class="d-flex justify-content-between align-items-center">
     <h1 class="fw-semibold fs-2"><i class="fa-solid fa-list"></i> All Campgrounds</h1>
     <a class="btn btn-success shadow" href="/campgrounds/new"><i class="fa-solid fa-plus"></i> Add Campground</a>
@@ -31,3 +33,10 @@
     </div>
 
 <% } %>
+
+
+<script>
+    const mapToken = '<%= process.env.MAPBOX_TOKEN %>';
+</script>
+
+<script src="/js/clusterMap.js"></script>
