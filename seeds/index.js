@@ -15,7 +15,7 @@ const seedDB = async () => {
         {
             title: 'Dusty River',
             price: 18,
-            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, fuga suscipit dolor in distinctio tempora id sit harum ipsa incidunt aperiam quam, ipsam provident quod libero exercitationem nam voluptas perferendis.',
+            description: 'Experience the breathtaking beauty of Yosemite National Park from this serene and well-equipped campground.',
             location: 'Yosemite National Park, California',
             geometry: {
                 type: 'Point',
@@ -46,7 +46,7 @@ const seedDB = async () => {
         {
             title: 'Diamond Flats',
             price: 28,
-            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, fuga suscipit dolor in distinctio tempora id sit harum ipsa incidunt aperiam quam, ipsam provident quod libero exercitationem nam voluptas perferendis.',
+            description: 'Immerse yourself in the tranquil wilderness of Adirondack Park, perfect for a peaceful retreat.',
             location: 'Adirondack Park, New York',
             geometry: {
                 type: 'Point',
@@ -69,7 +69,7 @@ const seedDB = async () => {
         {
             title: 'Maple Mule Camp',
             price: 22,
-            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, fuga suscipit dolor in distinctio tempora id sit harum ipsa incidunt aperiam quam, ipsam provident quod libero exercitationem nam voluptas perferendis.',
+            description: 'Experience the breathtaking landscapes and diverse wildlife in a haven for outdoor enthusiasts.',
             location: 'Devils Lake State Park, Wisconsin',
             geometry: {
                 type: 'Point',
@@ -92,7 +92,7 @@ const seedDB = async () => {
         {
             title: 'Bullfrog Springs',
             price: 17,
-            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, fuga suscipit dolor in distinctio tempora id sit harum ipsa incidunt aperiam quam, ipsam provident quod libero exercitationem nam voluptas perferendis.',
+            description: 'Discover rugged beauty and boundless adventure in a sprawling desert landscape.',
             location: 'Big Bend National Park, Texas',
             geometry: {
                 type: 'Point',
@@ -115,7 +115,7 @@ const seedDB = async () => {
         {
             title: 'Misty Backcountry',
             price: 18,
-            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, fuga suscipit dolor in distinctio tempora id sit harum ipsa incidunt aperiam quam, ipsam provident quod libero exercitationem nam voluptas perferendis.',
+            description: 'Embrace the tranquility of ancient mountains and lush forests in a haven for nature lovers.',
             location: 'Great Smoky Mountains National Park, Tennessee',
             geometry: {
                 type: 'Point',
@@ -138,7 +138,7 @@ const seedDB = async () => {
         {
             title: 'Sea Creekside',
             price: 29,
-            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, fuga suscipit dolor in distinctio tempora id sit harum ipsa incidunt aperiam quam, ipsam provident quod libero exercitationem nam voluptas perferendis.',
+            description: 'Explore the majestic beauty of diverse ecosystems, from lush rainforests to rugged coastlines.',
             location: 'Olympic National Park, Washington',
             geometry: {
                 type: 'Point',
@@ -161,7 +161,7 @@ const seedDB = async () => {
         {
             title: 'Rocky Point',
             price: 23,
-            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, fuga suscipit dolor in distinctio tempora id sit harum ipsa incidunt aperiam quam, ipsam provident quod libero exercitationem nam voluptas perferendis.',
+            description: 'Experience the awe-inspiring grandeur of towering peaks and pristine alpine lakes in a Rocky Mountain paradise.',
             location: 'Rocky Mountain National Park, Colorado',
             geometry: {
                 type: 'Point',
@@ -499,8 +499,8 @@ const seedDB = async () => {
             "reviews": [],
             "images": [
                 {
-                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717316151/YelpCamp/rqod45apyvi1a0rbjdui.jpg',
-                    filename: 'YelpCamp/rqod45apyvi1a0rbjdui',
+                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717315643/YelpCamp/timpxobk4z1lzehdnfc4.jpg',
+                    filename: 'YelpCamp/timpxobk4z1lzehdnfc4',
                 },
                 {
                     url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717315822/YelpCamp/elefehnuzaxtj2xvahzm.webp',
@@ -560,8 +560,8 @@ const seedDB = async () => {
             "reviews": [],
             "images": [
                 {
-                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717315644/YelpCamp/m3fe5n1rkd9dy9ei8noo.jpg',
-                    filename: 'YelpCamp/m3fe5n1rkd9dy9ei8noo',
+                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717316598/YelpCamp/fxod0oygrpl8nsf9oyof.webp',
+                    filename: 'YelpCamp/fxod0oygrpl8nsf9oyof',
                 },
                 {
                     url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717316404/YelpCamp/fywfr8k3oid0lcmyuxsj.jpg',
@@ -648,6 +648,10 @@ const seedDB = async () => {
             "reviews": [],
             "images": [
                 {
+                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717340283/YelpCamp/veffnmpyftzmumlrjn7d.jpg',
+                    filename: 'Yelpcamp/veffnmpyftzmumlrjn7d'
+                },
+                {
                     url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717316151/YelpCamp/rqod45apyvi1a0rbjdui.jpg',
                     filename: 'YelpCamp/rqod45apyvi1a0rbjdui',
                 }
@@ -690,8 +694,8 @@ const seedDB = async () => {
             "reviews": [],
             "images": [
                 {
-                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717315644/YelpCamp/m3fe5n1rkd9dy9ei8noo.jpg',
-                    filename: 'YelpCamp/m3fe5n1rkd9dy9ei8noo',
+                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717354169/YelpCamp/vmy2gj7n28wv8gkzjiav.webp',
+                    filename: 'YelpCamp/vmy2gj7n28wv8gkzjiav',
                 },
                 {
                     url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717316150/YelpCamp/fvin6sixhkwhdyxyf8uw.png',
@@ -750,6 +754,10 @@ const seedDB = async () => {
             "location": "Acadia National Park, Maine",
             "reviews": [],
             "images": [
+                {
+                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717315643/YelpCamp/timpxobk4z1lzehdnfc4.jpg',
+                    filename: 'YelpCamp/timpxobk4z1lzehdnfc4',
+                },
                 {
                     url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717315644/YelpCamp/m3fe5n1rkd9dy9ei8noo.jpg',
                     filename: 'YelpCamp/m3fe5n1rkd9dy9ei8noo',
@@ -869,8 +877,8 @@ const seedDB = async () => {
             "reviews": [],
             "images": [
                 {
-                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717316279/YelpCamp/ij444saowtmy31aqj0jb.jpg',
-                    filename: 'YelpCamp/ij444saowtmy31aqj0jb',
+                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717316598/YelpCamp/fxod0oygrpl8nsf9oyof.webp',
+                    filename: 'YelpCamp/fxod0oygrpl8nsf9oyof',
                 },
                 {
                     url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717316150/YelpCamp/fvin6sixhkwhdyxyf8uw.png',
@@ -972,8 +980,8 @@ const seedDB = async () => {
             "reviews": [],
             "images": [
                 {
-                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717316151/YelpCamp/rqod45apyvi1a0rbjdui.jpg',
-                    filename: 'YelpCamp/rqod45apyvi1a0rbjdui',
+                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717340283/YelpCamp/veffnmpyftzmumlrjn7d.jpg',
+                    filename: 'Yelpcamp/veffnmpyftzmumlrjn7d'
                 },
                 {
                     url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717316045/YelpCamp/sgnblyfk44fzfxssi2kv.jpg',
@@ -1014,8 +1022,8 @@ const seedDB = async () => {
             "reviews": [],
             "images": [
                 {
-                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717319922/YelpCamp/ybwdqnkrygdy3launkta.jpg',
-                    filename: 'YelpCamp/ybwdqnkrygdy3launkta',
+                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717354170/YelpCamp/qk9nutcguf6gnc6308vm.webp',
+                    filename: 'YelpCamp/qk9nutcguf6gnc6308vm',
                 },
                 {
                     url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717316045/YelpCamp/sgnblyfk44fzfxssi2kv.jpg',
@@ -1056,8 +1064,8 @@ const seedDB = async () => {
             "reviews": [],
             "images": [
                 {
-                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717315575/YelpCamp/hagodx5u5fyyhfmxx9ib.jpg',
-                    filename: 'YelpCamp/hagodx5u5fyyhfmxx9ib',
+                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717315819/YelpCamp/riu3esed53f9lfsiqek0.jpg',
+                    filename: 'YelpCamp/riu3esed53f9lfsiqek0',
                 },
                 {
                     url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717315644/YelpCamp/m3fe5n1rkd9dy9ei8noo.jpg',
@@ -1121,8 +1129,8 @@ const seedDB = async () => {
             "reviews": [],
             "images": [
                 {
-                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717315644/YelpCamp/m3fe5n1rkd9dy9ei8noo.jpg',
-                    filename: 'YelpCamp/m3fe5n1rkd9dy9ei8noo',
+                    url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717315643/YelpCamp/timpxobk4z1lzehdnfc4.jpg',
+                    filename: 'YelpCamp/timpxobk4z1lzehdnfc4',
                 },
                 {
                     url: 'https://res.cloudinary.com/dwtslthej/image/upload/v1717316045/YelpCamp/ke2d4haa9ghryfjjormn.jpg',
