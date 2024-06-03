@@ -1,13 +1,7 @@
 <% layout("layouts/boilerplate") %>
 
-<style>
-    .carousel-indicators li {
-        text-indent: -9999px;
-        overflow: hidden;
-    }
-</style>
-
 <link rel="stylesheet" href="/stylesheets/stars.css">
+<link rel="stylesheet" href="/stylesheets/app.css">
 
 <div class="row">
     <div class="col-md-6 offset-md-1">
@@ -70,7 +64,7 @@
     </div>
 
     <div class="col-md-4 ms-md-5">
-        <div id='map' class="rounded shadow mb-5" style='width: 400px; height: 300px;'></div>
+        <div id='map' class="rounded shadow mb-5"></div>
         <% if (currentUser) { %>
         <div class="bg-white p-4 rounded shadow mb-3">
             <h2 class="fw-semibold fs-4">Leave a Review</h2>
