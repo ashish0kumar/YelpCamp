@@ -19,7 +19,7 @@
                 <div class="carousel-inner">
                 <% campground.images.forEach((img, i)=> { %>
                     <div class="carousel-item <%= i === 0 ? " active" : "" %>">
-                        <img src="<%= img.url %>" class="d-block w-100 card-img-top" alt="">
+                        <img crossorigin="anonymous" src="<%= img.url %>" class="d-block w-100 card-img-top" alt="">
                     </div>
                 <% }) %>
                 </div>
@@ -36,7 +36,7 @@
                 <% } %>
                 </div>
             <% } else { %>
-                <img src="https://res.cloudinary.com/dwtslthej/image/upload/v1717354604/YelpCamp/default-featured-image.png_vjzli2.jpg" class="card-img-top" alt="">
+                <img crossorigin="anonymous" src="https://res.cloudinary.com/dwtslthej/image/upload/v1717354604/YelpCamp/default-featured-image.png_vjzli2.jpg" class="card-img-top" alt="">
             <% } %>
 
             <div class="card-body">

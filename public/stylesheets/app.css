@@ -12,3 +12,21 @@
     text-indent: -9999px;
     overflow: hidden;
 }
+
+.small-container {
+    width: 40%;
+}
+
+.smaller-container {
+    width: 30%;
+}
+
+@media (max-width: 1000px) {
+    .small-container {
+        width: 100%;
+    }
+
+    .smaller-container {
+        width: 100%;
+    }
+}
