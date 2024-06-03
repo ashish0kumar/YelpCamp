@@ -7,16 +7,18 @@ const imageSchema = new Schema({
     filename: String
 });
 
-imageSchema.virtual("thumbnail").get(function() {
+imageSchema.virtual("thumbnail").get(function () {
     return this.url.replace("/upload", "/upload/w_150");
 });
+
+const opts = { toJSON: { virtuals: true } };
 
 const campgroundSchema = new Schema({
     title: String,
     images: [imageSchema],
     geometry: {
         type: {
-            type: String, 
+            type: String,
             enum: ['Point'],
             required: true
         },
@@ -38,6 +40,11 @@ const campgroundSchema = new Schema({
             ref: "Review"
         }
     ]
+}, opts);
+
+campgroundSchema.virtual("properties.popupMarkup").get(function () {
+    return `<a href="/campgrounds/${this._id}" class="text-decoration-none fw-semibold">${this.title}</a>
+    <p>${this.description.substring(0, 70)}...</p>`;
 });
 
 
