@@ -13,9 +13,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/campgrounds">Campgrounds</a>
                 </li>
+                <% if (currentUser) { %>
                 <li class="nav-item">
                     <a class="nav-link" href="/campgrounds/new">New Campground</a>
                 </li>
+                <% } %>
             </ul>
         </div>
 

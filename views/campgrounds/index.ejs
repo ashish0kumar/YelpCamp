@@ -2,39 +2,50 @@
 
 <link rel="stylesheet" href="/stylesheets/app.css">
 
-<div id="cluster-map" class="rounded shadow mb-5"></div>
-
 <div class="d-flex justify-content-between align-items-center">
-    <h1 class="fw-semibold fs-2"><i class="fa-solid fa-list"></i> All Campgrounds</h1>
-    <a class="btn btn-success shadow" href="/campgrounds/new"><i class="fa-solid fa-plus"></i> Add Campground</a>
+    <div class="mb-2">
+        <h1 class="fw-semibold fs-4">Explore Campgrounds</h1>
+        <p>Choose the right destination from a range of campgrounds around the world.</p>
+    </div>
+    <% if (currentUser) { %>
+    <a class="btn btn-lg btn-success rounder shadow" href="/campgrounds/new"><i class="fa-solid fa-plus"></i> Add Campground</a>
+    <% } %>
 </div>
 
-<hr>
-
-<% for (let campground of campgrounds) { %>
-
-    <div class="card mb-2 mt-4 rounded shadow">
-        <div class="row">
-            <div class="col-md-4">
-                <% if (campground.images.length) { %>
-                    <img crossorigin="anonymous" src="<%= campground.images[0].url %>" class="img-fluid rounded">
-                <% } else { %>
-                    <img crossorigin="anonymous" src="https://res.cloudinary.com/dwtslthej/image/upload/v1717354604/YelpCamp/default-featured-image.png_vjzli2.jpg" class="img-fluid rounded">
-                <% } %>
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title fw-semibold"><%= campground.title %></h5>
-                    <hr>
-                    <p class="card-text"><%= campground.description %></p>
-                    <p><small class="text-muted"><i class="fa-solid fa-location-dot"></i> <%= campground.location %></small></p>
-                    <a class="btn btn-primary shadow" href="/campgrounds/<%= campground._id %>">View more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+<div class="d-flex gap-4">
+    <div class="scroll-container d-flex gap-4 flex-wrap w-50">
+        <% for (let campground of campgrounds) { %>
+        <div class="card mb-4 me-1 rounder index-card border border-2 border-dark-emphasis">
+            <% if (campground.images.length) { %>
+                <img crossorigin="anonymous" src="<%= campground.images[0].url %>" class="img-top card-image">
+            <% } else { %>
+                <img crossorigin="anonymous" src="https://res.cloudinary.com/dwtslthej/image/upload/v1717354604/YelpCamp/default-featured-image.png_vjzli2.jpg" class="img-top">
+            <% } %>
+                        
+            <div class="card-body">
+                <a href="/campgrounds/<%= campground._id %>" class="text-decoration-none text-black">
+                    <h5 class="card-title fw-semibold">
+                        <%= campground.title %>
+                    </h5>
+                </a>
+                <div class="d-flex justify-content-between">
+                    <p class="fw-semibold">
+                        <small class="text-muted"><i class="fa-solid fa-location-dot"></i>
+                            <%= campground.location %>
+                        </small>
+                    </p>
+                    <p class="fw-semibold">
+                        $<%= campground.price %>/night
+                    </p>
                 </div>
+                <!-- <a class="btn btn-primary rounder shadow" href="/campgrounds/<%= campground._id %>">View more <i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
             </div>
         </div>
+        <% } %>
     </div>
 
-<% } %>
+    <div id="cluster-map" class="rounded mb-5"></div>
+</div>
 
 
 <script>
