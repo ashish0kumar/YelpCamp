@@ -2,18 +2,20 @@
 
 <link rel="stylesheet" href="/stylesheets/app.css">
 
-<div class="d-flex justify-content-between align-items-center">
+<div class="d-md-flex justify-content-between align-items-center">
     <div class="mb-2">
         <h1 class="fw-semibold fs-4">Explore Campgrounds</h1>
         <p>Choose the right destination from a range of campgrounds around the world.</p>
     </div>
     <% if (currentUser) { %>
-    <a class="btn btn-lg btn-success rounder shadow" href="/campgrounds/new"><i class="fa-solid fa-plus"></i> Add Campground</a>
+    <a class="btn btn btn-success fw-semibold rounder" href="/campgrounds/new"><i class="fa-solid fa-plus"></i> Add Campground</a>
     <% } %>
 </div>
 
-<div class="d-flex gap-4">
-    <div class="scroll-container d-flex gap-4 flex-wrap w-50">
+<div class="d-md-flex flex-md-row-reverse gap-4">
+    <div id="cluster-map" class="rounded mb-5"></div>
+
+    <div class="scroll-container d-flex gap-4 flex-wrap">
         <% for (let campground of campgrounds) { %>
         <div class="card mb-4 me-1 rounder index-card border border-2 border-dark-emphasis">
             <% if (campground.images.length) { %>
@@ -43,8 +45,6 @@
         </div>
         <% } %>
     </div>
-
-    <div id="cluster-map" class="rounded mb-5"></div>
 </div>
 
 

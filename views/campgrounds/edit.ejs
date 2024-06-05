@@ -2,32 +2,31 @@
 
 <link rel="stylesheet" href="/stylesheets/app.css">
 
-<div class="container px-5">
-    <div class="container small-container mb-5 px-5 py-4 rounded bg-white shadow">
+<div class="container px-md-5">
+    <div class="container small-container mb-5 px-5 py-4 rounder border border-2 bprder-dark-emphasis">
         <h1 class="text-center fs-3 fw-semibold mb-3">Edit Campground</h1>
-        <hr>
         <div>
             <form action="/campgrounds/<%= campground._id %>?_method=PUT" method="POST" novalidate class="validated-form"
                 enctype="multipart/form-data">
     
                 <div class="mb-3">
-                    <label class="form-label" for="title">Title</label>
-                    <input class="form-control" type="text" name="campground[title]" id="title"
+                    <label class="form-label text-secondary fw-semibold" for="title">Title</label>
+                    <input class="form-control rounder" type="text" name="campground[title]" id="title"
                         value="<%= campground.title %>" required>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">Please choose a title</div>
                 </div>
     
                 <div class="mb-3">
-                    <label class="form-label" for="location">Location</label>
-                    <input class="form-control" type="text" name="campground[location]" id="location"
+                    <label class="form-label text-secondary fw-semibold" for="location">Location</label>
+                    <input class="form-control rounder" type="text" name="campground[location]" id="location"
                         value="<%= campground.location %>" required>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">Please choose a location</div>
                 </div>
     
                 <div class="mb-3">
-                    <label class="form-label" for="price">Price</label>
+                    <label class="form-label text-secondary fw-semibold" for="price">Price</label>
                     <div class="input-group">
                         <span class="input-group-text" id="price-label">$</span>
                         <input type="text" class="form-control" name="campground[price]" id="price" placeholder="0.00"
@@ -38,20 +37,20 @@
                 </div>
     
                 <div class="mb-3">
-                    <label class="form-label" for="description">Description</label>
-                    <textarea class="form-control" name="campground[description]" id="description"
+                    <label class="form-label text-secondary fw-semibold" for="description">Description</label>
+                    <textarea class="form-control rounder" name="campground[description]" id="description" rows="4"
                         required><%= campground.description %></textarea>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">Please choose a description</div>
                 </div>
     
                 <div class="mb-4">
-                    <label for="formFileMultiple" class="form-label">Add more images</label>
-                    <input class="form-control" type="file" name="image" id="image" multiple>
+                    <label for="formFileMultiple" class="form-label text-secondary fw-semibold">Add more images</label>
+                    <input class="form-control rounder" type="file" name="image" id="image" multiple>
                 </div>
     
                 <div class="mb-4">
-                    <label class="form-label mb-3">Delete selected images</label><br>
+                    <label class="form-label text-secondary fw-semibold mb-3">Delete selected images</label><br>
                     <% campground.images.forEach(function(img, i) { %>
                         <div class="image-container mx-2 mb-2">
                             <div class="form-check">
@@ -65,8 +64,8 @@
                         <% }) %>
                 </div>
     
-                <button class="btn btn-primary mb-2 text-white w-100">Update Campground</button><br>
-                <a class="btn btn-secondary mb-2 w-100" href="/campgrounds/<%= campground._id %>">Back to Campground</a>
+                <button class="btn btn-primary mb-2 text-white w-100 rounder shadow fw-semibold">Update Campground</button><br>
+                <a class="btn btn-secondary mb-2 w-100 rounder shadow" href="/campgrounds/<%= campground._id %>">Back to Campground</a>
     
             </form>
         </div>

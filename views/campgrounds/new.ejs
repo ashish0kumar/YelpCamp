@@ -1,51 +1,49 @@
 <% layout("layouts/boilerplate") %>
 
-<div class="container px-5">
-    <div class="container small-container mb-5 px-5 py-4 rounded bg-white shadow">
+<div class="container px-md-5">
+    <div class="container small-container mb-5 px-5 py-4 rounder border border-2 border-dark-emphasis">
         <h1 class="text-center fs-3 fw-semibold mb-3">New Campground</h1>
-        <hr>
         <div>
             <form action="/campgrounds" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
     
                 <div class="mb-3">
-                    <label class="form-label" for="title">Title</label>
-                    <input class="form-control" type="text" name="campground[title]" id="title" required>
+                    <label class="form-label text-secondary fw-semibold" for="title">Title</label>
+                    <input class="form-control rounder" type="text" name="campground[title]" id="title" placeholder="Enter title" required>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">Please choose a title</div>
                 </div>
     
                 <div class="mb-3">
-                    <label class="form-label" for="location">Location</label>
-                    <input class="form-control" type="text" name="campground[location]" id="location" required>
+                    <label class="form-label text-secondary fw-semibold" for="location">Location</label>
+                    <input class="form-control rounder" type="text" name="campground[location]" id="location" placeholder="Enter location" required>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">Please choose a location</div>
                 </div>
     
                 <div class="mb-3">
-                    <label class="form-label" for="price">Price</label>
+                    <label class="form-label text-secondary fw-semibold" for="price">Price</label>
                     <div class="input-group">
                         <span class="input-group-text" id="price-label">$</span>
-                        <input type="text" class="form-control" name="campground[price]" id="price" placeholder="0.00"
-                            required>
+                        <input type="text" class="form-control" name="campground[price]" id="price" placeholder="0.00" required>
                         <div class="valid-feedback">Looks good!</div>
                         <div class="invalid-feedback">Please choose a price</div>
                     </div>
                 </div>
     
                 <div class="mb-3">
-                    <label class="form-label" for="description">Description</label>
-                    <textarea class="form-control" name="campground[description]" id="description" required></textarea>
+                    <label class="form-label text-secondary fw-semibold" for="description">Description</label>
+                    <textarea class="form-control rounder" name="campground[description]" id="description" rows="4" required></textarea>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">Please choose a description</div>
                 </div>
     
                 <div class="mb-4">
-                    <label for="formFileMultiple" class="form-label">Upload images</label>
-                    <input class="form-control" type="file" name="image" id="image" multiple>
+                    <label for="formFileMultiple" class="form-label text-secondary fw-semibold">Upload images</label>
+                    <input class="form-control rounder" type="file" name="image" id="image" multiple>
                 </div>
     
-                <button class="btn btn-success mb-2 w-100">Add Campground</button>
-                <a class="btn btn-secondary mb-2 w-100" href="/campgrounds">Back to Campgrounds</a>
+                <button class="btn btn-success mb-2 w-100 rounder shadow fw-semibold">Add Campground</button>
+                <a class="btn btn-secondary mb-2 w-100 rounder shadow" href="/campgrounds">Back to Campgrounds</a>
     
             </form>
         </div>

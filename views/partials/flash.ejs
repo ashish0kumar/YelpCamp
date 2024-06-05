@@ -1,12 +1,14 @@
+<link rel="stylesheet" href="/stylesheets/app.css">
+
 <% if (success && success.length) { %>
-    <div class="alert alert-success alert-dismissible fade show w-25 mx-auto mt-4">
+    <div class="alert alert-success alert-dismissible fade show mx-auto mt-4">
         <%= success %>!
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 <% } %>
 
 <% if (error && error.length) { %>
-    <div class="alert alert-danger alert-dismissible fade show w-100 mx-auto mt-4">
+    <div class="alert alert-danger alert-dismissible fade show mx-auto mt-4">
         <%= error %>!
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
