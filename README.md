@@ -11,6 +11,12 @@ Welcome to YelpCamp! This is a web application that allows users to view, create
 - **Leave Reviews**: Users can leave reviews for campgrounds, sharing their experiences and recommendations.
 - **Edit and Delete**: Users can edit or delete their campgrounds and reviews.
 
+## Screenshots
+
+![home-page](/screenshots/home-page.png) <br>
+![explore-page](/screenshots/explore-page.png) <br>
+![show-page](/screenshots/show-page.png) <br>
+
 ## Technologies Used
 
 - **Node.js**: Backend JavaScript runtime environment.
