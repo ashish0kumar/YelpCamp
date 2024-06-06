@@ -3,7 +3,7 @@ const map = new mapboxgl.Map({
     container: 'cluster-map',
     style: 'mapbox://styles/mapbox/streets-v12',
     center: [77.989210, 24.050043],
-    zoom: 3
+    zoom: 4
 });
 
 map.addControl(new mapboxgl.NavigationControl());
