@@ -1,6 +1,6 @@
-# YelpCamp
+# [YelpCamp](https://yelpcamp-9xc9.onrender.com/)
 
-Welcome to YelpCamp! This is a web application that allows users to view, create, and review campgrounds. Whether you're an avid camper looking for your next adventure or a campground owner wanting to showcase your site, YelpCamp has you covered.
+Welcome to YelpCamp! This is a full-stack web application that allows users to view, create, and review campgrounds. Whether you're an avid camper looking for your next adventure or a campground owner wanting to showcase your site, YelpCamp has you covered.
 
 ## Features
 
@@ -10,11 +10,6 @@ Welcome to YelpCamp! This is a web application that allows users to view, create
 - **Add New Campgrounds**: Logged-in users can add new campgrounds to the platform, complete with images and descriptions.
 - **Leave Reviews**: Users can leave reviews for campgrounds, sharing their experiences and recommendations.
 - **Edit and Delete**: Users can edit or delete their campgrounds and reviews.
-
-## Screenshots
-
-![home-page](/screenshots/home-page.png) 
-![explore-page](/screenshots/explore-page.png) 
 
 ## Technologies Used
 
@@ -57,4 +52,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgements
 
-- This project was inspired by Colt Steele's Web Developer Bootcamp on Udemy.
+This project was inspired by Colt Steele's Web Developer Bootcamp on Udemy.
