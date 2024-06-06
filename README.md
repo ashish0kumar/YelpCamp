@@ -13,9 +13,8 @@ Welcome to YelpCamp! This is a web application that allows users to view, create
 
 ## Screenshots
 
-![home-page](/screenshots/home-page.png) <br>
-![explore-page](/screenshots/explore-page.png) <br>
-![show-page](/screenshots/show-page.png) <br>
+![home-page](/screenshots/home-page.png) 
+![explore-page](/screenshots/explore-page.png) 
 
 ## Technologies Used
 
