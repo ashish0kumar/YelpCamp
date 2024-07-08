@@ -2,7 +2,7 @@
 
 Welcome to YelpCamp! This is a full-stack web application that allows users to view, create, and review campgrounds. Whether you're an avid camper looking for your next adventure or a campground owner wanting to showcase your site, YelpCamp has you covered.
 
-🔗[Visit YelpCamp](https://yelpcamp-ci94.onrender.com)
+🔗[Visit YelpCamp](https://yelpcamp-ci94.onrender.com) (Please note that this link may take up to a minute to load as it is hosted on the Render's free tier.)
 
 <!-- [Visit YelpCamp]() -->
 
