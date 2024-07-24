@@ -4,8 +4,6 @@ Welcome to YelpCamp! This is a full-stack web application that allows users to v
 
 🔗[Visit YelpCamp](https://yelpcamp-ci94.onrender.com) *Please note that this link may take up to a minute to load as it is hosted on the Render's free tier.
 
-<!-- [Visit YelpCamp]() -->
-
 ## ✨ Features
 
 - **Browse Campgrounds**: View a list of campgrounds uploaded by users.
@@ -14,6 +12,10 @@ Welcome to YelpCamp! This is a full-stack web application that allows users to v
 - **Add New Campgrounds**: Logged-in users can add new campgrounds to the platform, complete with images and descriptions.
 - **Leave Reviews**: Users can leave reviews for campgrounds, sharing their experiences and recommendations.
 - **Edit and Delete**: Users can edit or delete their campgrounds and reviews.
+
+## 📸 Screenshots
+
+![home](screenshots/home-page.png)
 
 ## 🛠️ Technologies Used
 
