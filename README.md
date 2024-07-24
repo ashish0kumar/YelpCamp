@@ -15,9 +15,10 @@ Welcome to YelpCamp! This is a full-stack web application that allows users to v
 
 ## 📸 Screenshots
 
-![home](screenshots/home-page.png)
-
-<img src="screenshots/explore-page.png"/>
+<div style="display: flex">
+  <img src="screenshots/home-page.png" width="50%"/>
+  <img src="screenshots/explore-page.png" width="50%"/>
+</div>
 <!-- <img src="screenshots/show-page.png"/> -->
 
 ## 🛠️ Technologies Used
